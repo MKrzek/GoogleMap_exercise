@@ -1,22 +1,15 @@
-import React, { Component } from 'react';
+import React from "react";
+import "./index.css";
+import Search from "./Search.js";
+import Map from "./Map.js";
 
-
-
-class App extends Component {
-
-  getInitialState(){
-    let favourites=[];
-    if (localStorage.favourites){
-      favourites=JSON.parse(localStorage.favourites)
-    }
-  }
+export default class App extends React.Component {
   render() {
     return (
       <div>
-        
+        <Search />
+        <Map />
       </div>
     );
   }
 }
-
-export default App;
