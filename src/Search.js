@@ -35,6 +35,7 @@ export default class Search extends React.Component {
     });
   };
   render() {
+      console.log ('redner', this.props.map)
     return (
       <div id="floating-panel">
         <input
